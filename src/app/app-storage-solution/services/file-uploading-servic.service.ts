@@ -17,15 +17,17 @@ export class FileUploadingServicService {
   }
 
   getPresignedUrl(itemId, name){
-    return ""
-
+    return {
+      storageUrl : "",
+      token: ""
+    }
   }
 
   uploadAttachment(attachment){
     const itemId = this.getNewGuid();
-    const url = this.getPresignedUrl(itemId,  attachment.name);
-
-    return this.uploadFileWithProgress(url, attachment).pipe(map(resp => resp))
+    const urlObject = this.getPresignedUrl(itemId,  attachment.name);
+    const prsignedUrl = urlObject.storageUrl + "/" + attachment.name + "?" + urlObject.token;
+    return this.uploadFileWithProgress(prsignedUrl, attachment).pipe(map(resp => resp))
   }
 
   uploadFileWithProgress(url, file) {
