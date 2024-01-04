@@ -48,6 +48,7 @@ import {ScrollingModule} from '@angular/cdk/scrolling';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {AppStorageSolutionModule} from "./app-storage-solution/app-storage-solution.module";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 @NgModule({
     declarations: [
@@ -97,7 +98,8 @@ import {AppStorageSolutionModule} from "./app-storage-solution/app-storage-solut
         MatTreeModule,
         ScrollingModule,
         FlexLayoutModule,
-        AppStorageSolutionModule
+        AppStorageSolutionModule,
+        MatProgressBarModule
     ],
     providers: [
         CoursesService

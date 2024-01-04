@@ -1,6 +1,17 @@
 
-<div fxLayout="row" fxLayoutAlign="center center">
-  <div fxLayout="row" fxLayoutAlign="center center" class="center-section" style="margin-top: 40px">
+<div fxLayout="column" fxLayoutAlign="center center">
+
+  <div fxLayout="column" fxLayoutAlign="center center" class="center-section" style="margin-top: 40px">
+
+    <div fxlayout="row" style="padding-left: 8px; padding-right: 8px; width: 100%">
+      <div fxLayout="column" style="width: 100%">
+        <mat-progress-bar mode="determinate" [value]="uploadIndicator"></mat-progress-bar>
+        <div fxLayout="row" fxLayoutAlign="end center">
+          Percentage : {{uploadIndicator}}/100
+        </div>
+      </div>
+    </div>
+
     <button mat-raised-button color="primary" (click)="attachment.click()">
       Upload
     </button>
