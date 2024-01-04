@@ -47,6 +47,7 @@ import {VirtualScrollingComponent} from './virtual-scrolling/virtual-scrolling.c
 import {ScrollingModule} from '@angular/cdk/scrolling';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {AppStorageSolutionModule} from "./app-storage-solution/app-storage-solution.module";
 
 @NgModule({
     declarations: [
@@ -95,7 +96,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
         MatGridListModule,
         MatTreeModule,
         ScrollingModule,
-        FlexLayoutModule
+        FlexLayoutModule,
+        AppStorageSolutionModule
     ],
     providers: [
         CoursesService

@@ -12,8 +12,8 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
-  uploadFile(){
-
+  onChangeAttachment(event){
+    console.log("uploaded file", event.target.files[0])
   }
 
 }
