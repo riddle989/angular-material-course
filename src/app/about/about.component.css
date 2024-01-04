@@ -11,3 +11,10 @@
 :host {
   font-family: Roboto;
 }
+
+.center-section {
+  height: 600px;
+  width: 700px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
