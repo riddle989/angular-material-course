@@ -8,6 +8,7 @@ import {DragDropComponent} from './drag-drop/drag-drop.component';
 import {TreeDemoComponent} from './tree-demo/tree-demo.component';
 import {VirtualScrollingComponent} from './virtual-scrolling/virtual-scrolling.component';
 import {FileUploaderComponent} from "./app-storage-solution/file-uploader/file-uploader.component";
+import {StorageListComponent} from "./app-storage-solution/storage-list/storage-list.component";
 
 const routes: Routes = [
     {
@@ -17,7 +18,7 @@ const routes: Routes = [
     },
     {
         path: "storage-management",
-        component: FileUploaderComponent
+        component: StorageListComponent
     },
     {
         path: 'courses/:id',

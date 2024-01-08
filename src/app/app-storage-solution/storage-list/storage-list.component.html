@@ -1,0 +1,28 @@
+<p>storage-list works!</p>
+<div class="parent-container">
+  <div fxLayout="row" fxLayoutGap="8px">
+    <div *ngFor="let data of dataList" >
+
+      <div *ngIf="data.type === 'folder'" class="folder-card" fxLayout="column" fxLayoutAlign="center center">
+        <mat-icon color="primary" class="storage-list-icon">folder</mat-icon>
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+          <span>{{data.name}}</span>
+<!--          <mat-icon>more_vert</mat-icon>-->
+        </div>
+      </div>
+
+      <div *ngIf="data.type === 'file'" class="folder-card">
+        <div fxFlex="100" fxLayout="column" fxLayoutAlign="center center">
+          <mat-icon color="primary" class="storage-list-icon">description</mat-icon>
+          <div fxLayout="row" fxLayoutAlign="space-between center">
+            <span>{{data.name}}</span>
+<!--            <mat-icon>more_vert</mat-icon>-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
