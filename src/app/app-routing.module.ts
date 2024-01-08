@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from "./home/home.component";
-import {AboutComponent} from "./about/about.component";
 import {CourseComponent} from "./course/course.component";
 import {courseResolver} from "./services/course.resolver";
 import {CreateCourseComponent} from './create-course/create-course.component';
 import {DragDropComponent} from './drag-drop/drag-drop.component';
 import {TreeDemoComponent} from './tree-demo/tree-demo.component';
 import {VirtualScrollingComponent} from './virtual-scrolling/virtual-scrolling.component';
+import {FileUploaderComponent} from "./app-storage-solution/file-uploader/file-uploader.component";
 
 const routes: Routes = [
     {
@@ -17,7 +17,7 @@ const routes: Routes = [
     },
     {
         path: "about",
-        component: AboutComponent
+        component: FileUploaderComponent
     },
     {
         path: 'courses/:id',

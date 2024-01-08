@@ -1,12 +1,12 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import {FileUploadingServicService} from "../app-storage-solution/services/file-uploading-servic.service";
+import {FileUploadingServicService} from "../services/file-uploading-servic.service";
 
 @Component({
-  selector: 'about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  selector: 'file-uploader',
+  templateUrl: './file-uploader.component.html',
+  styleUrls: ['./file-uploader.component.css']
 })
-export class AboutComponent implements OnInit {
+export class FileUploaderComponent implements OnInit {
 
   public uploadIndicator = 0;
   constructor(
