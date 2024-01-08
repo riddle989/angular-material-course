@@ -16,7 +16,7 @@ const routes: Routes = [
 
     },
     {
-        path: "about",
+        path: "storage-management",
         component: FileUploaderComponent
     },
     {
